@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-Model Predictor</title>
+  <style>
+    body {
+      background: #0d1523;
+      color: #e9edf5;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 { margin-bottom: 10px; }
+    label { font-size: 14px; color: #b9c0cc; }
+    select, input[type=number] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #2c3545;
+      border-radius: 5px;
+      background: #111a2b;
+      color: white;
+    }
+    #inputs {
+      margin-top: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    button {
+      margin-top: 12px;
+      padding: 10px 14px;
+      border: none;
+      background: #5bc8ff;
+      color: #082032;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 6px;
+    }
+    button:hover { opacity: 0.9; }
+    pre {
+      background: #0b1420;
+      padding: 12px;
+      border-radius: 6px;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #1f2a3a;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Multi-Model Predictor</h1>
+
+  <label for="modelSelect">Select Model</label>
+  <select id="modelSelect"></select>
+
+  <div id="inputs"></div>
+
+  <button id="predictBtn">Predict</button>
+  <button id="fillSampleBtn">Fill sample</button>
+  <button id="clearBtn">Clear</button>
+
+  <h3>Result</h3>
+  <pre id="result">No prediction yet.</pre>
+</div>
+
+<script src="/static/main.js"></script>
+</body>
+</html>

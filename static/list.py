@@ -1,0 +1,11 @@
+a=["a","b","c","d"]
+print("initial array:",a)
+a.extend(["s","a","i"])
+a.insert(9,10)
+a.append("N")
+print("After insertion:",a)
+a.remove("a")
+a.pop()
+print("after removing:",a)
+a.clear()
+print("after clear():",a)

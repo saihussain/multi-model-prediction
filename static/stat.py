@@ -1,0 +1,10 @@
+import statistics as s
+n=list(map(float,input("enter number:").split()))
+av=sum(n)/len(n)
+mean=s.mean(n)
+median=s.median(n)
+std=s.stdev(n)
+print("Average:",av)
+print("mean:",mean)
+print("median:",median)
+print("stanodard deviation:",std)
